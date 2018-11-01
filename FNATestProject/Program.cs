@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Xna.Framework;
 
 namespace FNATestProject
 {
@@ -10,6 +11,8 @@ namespace FNATestProject
     {
         static void Main(string[] args)
         {
+            FNATestGame game = new FNATestGame();
+            game.Run();
         }
     }
 }
