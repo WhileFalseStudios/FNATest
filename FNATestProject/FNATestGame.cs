@@ -37,9 +37,12 @@ namespace FNATestProject
         protected override void Draw(GameTime gameTime)
         {            
             GraphicsDevice.Clear(Color.Black);
-            batch.Begin();
-            batch.Draw(testTex, new Vector2(100, 100), Color.White);
-            batch.End();
+            if (!(testTex is null))
+            {
+                batch.Begin();
+                batch.Draw(testTex, new Vector2(100, 100), Color.White);
+                batch.End();
+            }
 
             base.Draw(gameTime);
         }
