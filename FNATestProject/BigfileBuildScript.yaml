@@ -1,0 +1,27 @@
+﻿# BIGFILE WRITE SCRIPT EXAMPLE
+
+# 256MiB splits
+overrideSplitSize: 268435500
+
+# List of extensions to build/not build.
+# Set excludeExt to true to turn into a blacklist
+excludeExt: false
+extensions:
+    - png
+    - fmdl
+    - gltf
+    - bin
+    - yaml
+    - fxc
+    - wav
+    - ogg
+    - ogv
+    - bsp
+    - ttf
+    - lua
+    
+# Glob list of directories to ignore when building.
+# Works like gitignore
+directories:
+    - **/_donotship
+    - **/*src

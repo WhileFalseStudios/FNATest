@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="BigfileBuildScript.yaml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DataSearchPaths.yaml">
