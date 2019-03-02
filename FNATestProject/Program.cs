@@ -1,4 +1,5 @@
-﻿using System;
+﻿// #define SELECTION
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,7 @@ namespace FNATestProject
         {
             bool validInput = false;
             Game game = null;
+#if SELECTION
             while (!validInput)
             {
                 Console.Write("Choose a game to load:\n  1. 2D Demo\n  2. 3D Demo\nSelection: ");
@@ -29,6 +31,9 @@ namespace FNATestProject
                     }
                 }
             }
+#else
+            game = new FNATestGame2D();
+#endif
 
             game.Run();
         }
